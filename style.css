@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'futura', 'sans-serif';
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/black.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0;
+    background-color: #000; 
+    z-index: 999; 
+  }
+  
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+
+
+}
+
+nav ul a{
+    color: #ffff;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.text-box{
+    color: #ffff;
+    position: absolute;
+    bottom: 8%;
+
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+
+    }    
+}
+
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.text-box a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #ffff;
+    display: flex;
+    align-items: center;
+
+}
+
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+
+}
+
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+    
+
+}
+
+
+/* Default styles */
+
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffff;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.projects h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 20px;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: 0;
+}
+
+.project-images img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 90%;
+    margin-top: -250px;
+}
+
+.project-images img:hover {
+  filter: brightness(150%) drop-shadow(0px 0px 10px black);
+  transition: filter 0.5s;
+}
+
+
+.projects a {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media queries */
+
+/* For screens smaller than 768px (e.g. phones) */
+@media (max-width: 768px) {
+    .projects h1 {
+        font-size: 2.5em;
+        padding-top: 50px;
+    }
+
+    .project-images img {
+        margin-top: -100px;
+    }
+}
+
+/* For screens between 768px and 1024px (e.g. tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projects h1 {
+        font-size: 3em;
+        padding-top: 75px;
+    }
+
+    .project-images img {
+        margin-top: -150px;
+    }
+}
+
+/* For screens larger than 1024px (e.g. desktops) */
+@media (min-width: 1024px) {
+    .projects h1 {
+        font-size: 4em;
+        padding-top: 100px;
+    }
+
+    .project-images img {
+        margin-top: -250px;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      padding: 0 5%;
+    }
+    
+    .text-box {
+      bottom: 10%;
+    }
+    
+    .text-box h1 {
+      font-size: 150px;
+      line-height: 130px;
+    }
+    
+    .text-box h3 {
+      font-size: 30px;
+    }
+    
+    .social-icons {
+      right: 10%;
+    }
+  }
+  
