@@ -135,6 +135,33 @@ nav ul li a:hover::after{
 
 }
 
+.dl-resume{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease-in-out;;
+}
+
+.dl-resume:hover {
+    background-color: #A642FD;
+    color: #fff;
+  }
+
+.email-me{
+    background-color: #A642FD;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease-in-out;;
+}
+
+.email-me:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+
+
 .social-icons{
     position: absolute;
     right: 5%;
@@ -148,8 +175,6 @@ nav ul li a:hover::after{
     
 
 }
-
-
 
 .projects {
     height: 100vh;
@@ -200,7 +225,7 @@ html {
 
 /* Media queries */
 
-/* For screens smaller than 768px (phones) */
+/* For screens smaller than 768px (e.g. phones) */
 @media (max-width: 768px) {
     .projects h1 {
         font-size: 2.5em;
@@ -212,7 +237,7 @@ html {
     }
 }
 
-/* For screens between 768px and 1024px (tablets) */
+/* For screens between 768px and 1024px (e.g. tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .projects h1 {
         font-size: 3em;
@@ -224,7 +249,7 @@ html {
     }
 }
 
-/* For screens larger than 1024px (desktops) */
+/* For screens larger than 1024px (e.g. desktops) */
 @media (min-width: 1024px) {
     .projects h1 {
         font-size: 4em;
