@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "Futura";
+    src: url("Futura.ttc") format("ttc");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'futura', 'sans-serif';
+    font-family: "Futura", "sans-serif";
 
 }
 .container{
